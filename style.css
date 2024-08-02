@@ -1,3 +1,11 @@
+:root {
+  --lapis-blue: #2f6690;
+  --platinum-white: #d9dcd6;
+  --sky-blue: #81c3d7;
+  --indigo-blue: #16425b;
+  --ceruelian-blue: #3a7ca5;
+}
+
 * {
   margin: 0;
   padding: 0;
