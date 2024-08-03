@@ -9,37 +9,52 @@
   <body>
     <div class="wrapper">
       <nav>
-        <p>Ż</p>
+        <p><a href="#">Ż</a></p>
         <div class="nav_links">
-          <a href="#">About</a><a href="#">Projects</a><a href="#">Contact</a>
+          <a href="#about">About</a><a href="#projects">Projects</a
+          ><a href="#contact">Contact</a>
         </div>
       </nav>
-
-      <div class="title">
-        <p>Kacper Żuławski</p>
-        <h1>Front-end developer porfolio</h1>
+      <div class="title" id="title">
+        <p id="my_name">Kacper Żuławski</p>
+        <h1>
+          <span class="text-line" style="--delay: 0.2s">Front-end</span
+          ><br /><span class="text-line" style="--delay: 0.4s">developer</span
+          ><br /><span class="text-line" style="--delay: 0.6s">porfolio</span>
+        </h1>
       </div>
-      <div class="about">
-        <p>About</p>
+      <div class="about" id="about">
+        <p class="section_title">About</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
-          perferendis temporibus, vitae, aspernatur quidem cum eveniet similique
-          itaque quisquam architecto, porro inventore animi assumenda unde quam
-          quia suscipit incidunt? Incidunt?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum pariatur
+          suscipit libero ipsam tempore minus praesentium et culpa perferendis
+          odit quaerat exercitationem fuga, distinctio consequatur labore ad
+          unde, veritatis ipsa.
         </p>
       </div>
-      <div class="projects">
-        <p>My Projects</p>
+      <div class="projects" id="projects">
+        <p class="section_title">My Projects</p>
         <ul>
-          <li>Instagram clone</li>
-          <li>Sleep-schedule</li>
-          <li>Log-in form</li>
+          <li>
+            <img src="/public/example_project.jpg" alt="" />
+            <p>Instagram clone</p>
+          </li>
+          <li>
+            <img src="/public/example_project.jpg" alt="" />
+            <p>Sleep-schedule</p>
+          </li>
+          <li>
+            <img src="/public/example_project.jpg" alt="" />
+            <p>Log-in form</p>
+          </li>
         </ul>
       </div>
-      <div>
-        <p>Contact</p>
-        <p>example@gmailus.comus</p>
-        <p>(+48) 777 888 999</p>
+      <div class="contact" id="contact">
+        <p class="section_title">Contact</p>
+        <div class="contact_options">
+          <p id="contact_mail">example@gmailus.comus</p>
+          <p id="contact_phone">(+48) 777 888 999</p>
+        </div>
       </div>
     </div>
   </body>
