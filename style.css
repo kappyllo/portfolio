@@ -18,9 +18,9 @@ body {
   height: 100%;
   font-size: 16px;
   line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   background-color: var(--bg-color);
-  overflow-x: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
@@ -74,15 +74,9 @@ nav p {
   transition: 0.3s;
 }
 
-/* .title {
-  padding-block: 14rem;
-  font-size: 7rem;
-  line-height: 0.8;
-  letter-spacing: -0.65rem;
-  text-transform: uppercase;
-  transition: 0.9s;
-} */
-
+#my_name {
+  margin-bottom: 1rem;
+}
 .title {
   padding-block: 14rem;
   font-size: 7rem;
@@ -93,14 +87,14 @@ nav p {
 
 .text-line {
   display: inline-block;
-  opacity: 0; /* Hidden initially */
-  transform: translateY(100%); /* Positioned below initially */
-  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s; /* Transition with bounce effect */
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s;
 }
 
 .text-line.reveal {
-  opacity: 1; /* Make it visible */
-  transform: translateY(0); /* Move it to its final position */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .title p {
@@ -115,17 +109,29 @@ nav p {
   text-align: center;
   font-size: 3rem;
   margin-block: 2rem;
+  letter-spacing: 1rem;
+
+  font-weight: 700;
 }
 
 .about {
   margin-bottom: 20rem;
   text-align: center;
   font-size: 4rem;
-  letter-spacing: -0.15rem;
-  line-height: 0.9;
 }
 #about {
   scroll-margin-block-start: 20rem;
+}
+#about_description {
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: normal;
+  font-style: italic;
+}
+#about_description span a {
+  color: var(--sky-blue);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .projects {
@@ -138,6 +144,60 @@ nav p {
   text-align: center;
   justify-content: space-between;
   gap: 2rem;
+}
+
+.image_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.overlay_text {
+  z-index: 123;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image_container:hover .image {
+  opacity: 0.5;
+}
+
+.image_container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.image_container:hover .overlay_text {
+  opacity: 1;
+}
+
+.slide_in_image {
+  width: 30%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 0.8s ease-out;
+}
+
+.slide_in_active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .contact {
@@ -158,3 +218,10 @@ nav p {
 #contact_mail {
   color: var(--sky-blue);
 }
+
+#my_scrollbar {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* about page below */
