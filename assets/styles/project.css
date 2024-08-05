@@ -1,0 +1,41 @@
+.wrapper p {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+.main_project_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  gap: 2rem;
+}
+
+.main_project_section img {
+  height: 40rem;
+}
+
+.technologies {
+  padding-block: 15rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.technologies li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.technologies li p {
+  font-weight: 900;
+  font-style: italic;
+}
