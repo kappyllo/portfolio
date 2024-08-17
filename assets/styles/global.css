@@ -28,7 +28,6 @@ img,
 svg {
   display: block;
   max-width: 100%;
-  height: 100%;
 }
 
 input,
@@ -150,6 +149,10 @@ nav p {
 .image_container {
   position: relative;
   overflow: hidden;
+}
+
+.image_container img {
+  height: 100%;
 }
 
 .overlay {

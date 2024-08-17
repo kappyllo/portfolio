@@ -1,5 +1,3 @@
-// const { Scrollbar } = require("smooth-scrollbar/scrollbar");
-
 const scrollb = Scrollbar.init(document.querySelector("#my_scrollbar"));
 
 document.addEventListener("DOMContentLoaded", () => {
