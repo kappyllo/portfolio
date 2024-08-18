@@ -78,9 +78,9 @@ nav p {
   margin-bottom: 1rem;
 }
 .title {
-  padding-block: 14rem;
-
-  font-size: 7rem;
+  padding-top: 14rem;
+  max-height: 100vh;
+  font-size: 5.8vw;
   line-height: 0.8;
   letter-spacing: -0.65rem;
   text-transform: uppercase;
@@ -101,7 +101,7 @@ nav p {
 .title p {
   color: var(--sky-blue);
   text-transform: capitalize;
-  font-size: 5rem;
+  font-size: 4.167vw;
   letter-spacing: -0.25rem;
 }
 
@@ -111,14 +111,18 @@ nav p {
   font-size: 3rem;
   margin-block: 2rem;
   letter-spacing: 1rem;
-
   font-weight: 700;
 }
 
 .about {
-  height: 100vh;
+  max-height: 100vh;
+  margin-block: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.333vw;
 }
 #about {
   scroll-margin-block-start: 20rem;
@@ -136,7 +140,12 @@ nav p {
 }
 
 .projects {
-  height: 100vh;
+  max-height: 100vh;
+  margin-block: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects ul {
@@ -206,7 +215,8 @@ nav p {
 }
 
 .contact {
-  height: 100vh;
+  max-height: 100vh;
+  margin-block: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,13 +224,13 @@ nav p {
 }
 
 .contact_options {
-  font-size: 7rem;
+  font-size: 5.833vw;
   letter-spacing: -0.15rem;
   line-height: 1.3;
 }
 
 #contact_phone {
-  font-size: 5rem;
+  font-size: 4.167vw;
 }
 
 #contact_mail {
@@ -234,4 +244,71 @@ nav p {
 
 #date {
   color: var(--sky-blue);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 8vw;
+  }
+  .title p {
+    font-size: 5vw;
+  }
+
+  .about {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide_in_image {
+    width: 25vw;
+  }
+
+  .contact {
+    margin-block: 50%;
+  }
+  .contact_options {
+    font-size: 8.9vw;
+  }
+  #contact_phone {
+    font-size: 8vw;
+  }
+
+  .about {
+    font-size: 5vw;
+  }
+
+  nav {
+    justify-content: space-around;
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100vw;
+    padding-inline: 2rem;
+  }
+
+  .title p {
+    letter-spacing: -0.1rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .section_title {
+    font-size: 7vw;
+  }
+
+  .title {
+    font-size: 9.5vw;
+    letter-spacing: -0.5rem;
+  }
+  .title p {
+    font-size: 6.5vw;
+  }
+
+  .about {
+    font-size: 6vw;
+  }
 }
