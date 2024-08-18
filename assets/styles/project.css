@@ -1,5 +1,10 @@
-.wrapper p {
-  font-size: 3rem;
+.wrapper_project {
+  max-width: 144rem;
+  padding-inline: 10rem;
+}
+
+.wrapper_project p {
+  font-size: 2.5vw;
   line-height: 1.2;
   font-weight: 300;
 }
@@ -17,11 +22,11 @@ ul {
 }
 
 .main_project_section img {
-  height: 40rem;
+  height: 60vh;
 }
 
 .technologies {
-  padding-block: 15rem;
+  padding-block: 22.222vh;
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -38,4 +43,55 @@ ul {
 .technologies li p {
   font-weight: 900;
   font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .main_project_section img {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_project_section img {
+    height: 30vh;
+  }
+
+  .wrapper_project {
+    padding-inline: 5rem;
+  }
+
+  .wrapper_project p {
+    font-size: 4vw;
+  }
+
+  .technologies {
+    padding-block: 12vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .main_project_section img {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 485px) {
+  .main_project_section img {
+    width: 100vw;
+  }
+
+  .wrapper_project {
+    padding-inline: 2rem;
+  }
+
+  .wrapper_project p {
+    font-size: 6vw;
+  }
+
+  .nav_links {
+    gap: 0;
+  }
+  .nav_links a {
+    padding-inline: 0.5rem;
+  }
 }

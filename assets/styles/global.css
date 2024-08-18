@@ -28,6 +28,7 @@ img,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -310,5 +311,9 @@ nav p {
 
   .about {
     font-size: 6vw;
+  }
+
+  #nav_logo {
+    display: none;
   }
 }
