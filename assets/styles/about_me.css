@@ -19,9 +19,9 @@
   width: 50%;
 }
 
-/* img {
-  height: 30rem;
-} */
+.contact {
+  margin-top: 40%;
+}
 
 .slide_in_image_about {
   width: 30%;
@@ -70,8 +70,17 @@
   }
 }
 
-@media (max-width: 420) {
-  #nav_logo {
+@media (max-width: 420px) {
+  .slide_in_image_about {
     display: none;
+  }
+
+  .about_section {
+    justify-content: left;
+  }
+
+  .about_section p {
+    font-size: 5.4vw;
+    width: 100%;
   }
 }
